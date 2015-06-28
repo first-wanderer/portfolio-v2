@@ -10,11 +10,12 @@ module.exports = function(grunt) {
   grunt.loadTasks('grunt');
 
   grunt.registerTask('bower-install', ['bower-install-simple']);
+
   grunt.registerTask('combing', [
-    // 'csscomb',
     'jshint',
     'jscs'
   ]);
+
   grunt.registerTask('build', [
     'combing',
     'clean:build',
@@ -24,8 +25,6 @@ module.exports = function(grunt) {
     'cmq',
     'cssmin',
     'imagemin',
-    'svgmin',
-    'svginject',
     'concat',
     'uglify:libs',
     'uglify:script'
