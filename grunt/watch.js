@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     },
     css: {
       files: 'source/less/**/*.less',
-      tasks: ['less', 'autoprefixer', 'cmq', 'cssmin'],
+      tasks: ['less', 'autoprefixer', 'cmq'],
       options: {
         spawn: false,
       },
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     },
     script: {
       files: 'source/js/script.js',
-      tasks: ['copy:watchscript', 'uglify:script'],
+      tasks: ['copy:watchscript'],
       options: {
         spawn: false,
       },

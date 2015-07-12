@@ -22,6 +22,15 @@ module.exports = function(grunt) {
     'copy:build',
     'less',
     'autoprefixer',
+    'cmq'
+  ]);
+
+  grunt.registerTask('build-prod', [
+    'combing',
+    'clean:build',
+    'copy:build',
+    'less',
+    'autoprefixer',
     'cmq',
     'cssmin',
     'imagemin',

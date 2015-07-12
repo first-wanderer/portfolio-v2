@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'source',
         src: [
-        'img/**',
+        'image/**',
         'js/**',
         '*.html'
         ],

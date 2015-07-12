@@ -1,0 +1,54 @@
+.page-header {
+  position: relative;
+  min-height: @height-header;
+  background-color: transparent;
+}
+
+.head-wrapper {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.head-centred {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.head-text {
+  display: inline-block;
+  h1 {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4.7em;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 0 10px;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px @color-light,
+                 0 0 15px @color-light-dk;
+    @media (max-width: @screen-xs) {
+      font-size: 2.8em;
+    }
+  }
+  p {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.7em;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 10px;
+    text-shadow: 0 0 2px #fff,
+                 0 0 5px @color-light,
+                 0 0 10px @color-light-dk;
+    @media (max-width: @screen-xs) {
+      font-size: 0.9em;
+    }
+  }
+}

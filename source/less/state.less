@@ -1,0 +1,26 @@
+a:hover {
+  text-shadow: 0 0 1px #fff,
+               0 0 3px @color-light;
+}
+.s-portfolio li {
+  &:hover {
+    text-shadow: 0 0 1px #fff,
+               0 0 3px @color-light;
+  }
+  &.active {
+    color: @color-light-bl;
+    text-shadow: none;
+    border-bottom: 1px solid @color-light-bl;
+    cursor: default;
+  }
+}
+
+.mix:hover .mix-tooltip {
+  transform: scaleY(1);
+}
+
+.btn:hover, .btn:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #fff,
+              0 0 3px 1px @color-light;
+}
