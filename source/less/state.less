@@ -1,7 +1,13 @@
-a:hover {
-  color: #fff;
-  text-shadow: 0 0 1px #fff,
-               0 0 3px @color-light;
+a {
+  &:hover {
+    color: #fff;
+    text-shadow: 0 0 1px #fff,
+                 0 0 3px @color-light;
+  }
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 .s-portfolio li {
   &:hover {

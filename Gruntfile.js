@@ -25,6 +25,14 @@ module.exports = function(grunt) {
     'cmq'
   ]);
 
+  grunt.registerTask('usemin-prod', [
+    'useminPrepare',
+    'cssmin:generated',
+    'concat:generated',
+    'uglify:generated',
+    'usemin'
+  ]);
+
   grunt.registerTask('build-prod', [
     'combing',
     'clean:build',
@@ -32,10 +40,7 @@ module.exports = function(grunt) {
     'less',
     'autoprefixer',
     'cmq',
-    'cssmin',
-    'imagemin',
-    'concat',
-    'uglify:libs',
-    'uglify:script'
+    'usemin-prod',
+    'imagemin'
   ]);
 };

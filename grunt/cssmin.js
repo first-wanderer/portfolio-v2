@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   grunt.config('cssmin', {
-    style: {
+    generated: {
       options: {
         keepSpecialComments: 0,
         report: 'gzip'
