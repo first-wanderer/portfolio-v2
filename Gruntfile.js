@@ -27,8 +27,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('usemin-prod', [
     'useminPrepare',
-    'cssmin:generated',
     'concat:generated',
+    'cssmin:generated',
     'uglify:generated',
     'usemin'
   ]);
